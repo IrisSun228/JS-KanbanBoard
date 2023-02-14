@@ -23,6 +23,9 @@ const create_item = () => {
 
   item.addEventListener('dragstart', event => {return event.DataTransfer.setData('text', event.target.id)})
   item.addEventListener('dragend', event => {return event.dataTransfer.clearData()});
+
+  let input = document.createElement('input');
+  item.appendChild(input);
 };
 
 document.querySelectorAll('.drop').forEach(element => {
