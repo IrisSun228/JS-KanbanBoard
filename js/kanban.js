@@ -33,7 +33,11 @@ const create_item = () => {
   save_btn.addEventListener('click', () => {
     error.innerHTML = '';
 
-    if {input.value !== ''} {}
+    if {input.value !== ''} {
+      order++;
+      item.innerHTML = input.value;
+      adding = false;
+    }
   })
 };
 
